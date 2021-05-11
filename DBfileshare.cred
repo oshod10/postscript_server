@@ -1,0 +1,9 @@
+sudo bash -c 'echo "//st01ht01.file.core.windows.net/oracle/data /oracle/data cifs nofail,vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino" >> /etc/fstab'
+sudo mount -t cifs //st01ht01.file.core.windows.net/oracle/data /oracle/data -o vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino
+sudo bash -c 'echo "//st01ht01.file.core.windows.net/etc/ftp/Bulk_File/UploadSummaryReport /oracle/data/usage/extracts_files_path/Bulk_File/SummaryReport cifs nofail,vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino" >> /etc/fstab'
+sudo mount -t cifs //st01ht01.file.core.windows.net/etc/ftp/Bulk_File/UploadSummaryReport /oracle/data/usage/extracts_files_path/Bulk_File/SummaryReport -o vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino
+sudo bash -c 'echo "//st01ht01.file.core.windows.net/etc/ftp/Bulk_File/UploadDownloadResult /oracle/data/usage/extracts_files_path/Bulk_File/DownloadResult cifs nofail,vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino" >> /etc/fstab'
+sudo mount -t cifs //st01ht01.file.core.windows.net/etc/ftp/Bulk_File/UploadDownloadResult /oracle/data/usage/extracts_files_path/Bulk_File/DownloadResult -o vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino
+sudo bash -c 'echo "//st01ht01.file.core.windows.net/etc/ftp/DownloadToFile/Upload /oracle/data/usage/extracts_files_path/DownloadToFile/Upload cifs nofail,vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino" >> /etc/fstab'
+sudo mount -t cifs //st01ht01.file.core.windows.net/etc/ftp/DownloadToFile/Upload /oracle/data/usage/extracts_files_path/DownloadToFile/Upload -o vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino
+

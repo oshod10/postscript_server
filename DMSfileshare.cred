@@ -1,0 +1,4 @@
+sudo bash -c 'echo "//st01ht01.file.core.windows.net/oracle/data /oracle/data cifs nofail,vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino" >> /etc/fstab'
+sudo mount -t cifs //st01ht01.file.core.windows.net/oracle/data /oracle/data -o vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino
+sudo bash -c 'echo "//st01ht01.file.core.windows.net/etc/ftp /home/sigvalue/etc/ftp cifs nofail,vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino" >> /etc/fstab'
+sudo mount -t cifs //st01ht01.file.core.windows.net/etc/ftp /home/sigvalue/etc/ftp -o vers=3.0,credentials=/root/credentials.cred,dir_mode=0777,file_mode=0777,serverino
